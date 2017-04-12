@@ -63,7 +63,7 @@ def detect_changes():
 def upload_changes():
     os.system("git stash apply && git stash drop && git commit -am 'autocommit' && git push origin master")
 
-    
+
 def get_changes():
     os.system("git pull origin master --no-edit")
 
