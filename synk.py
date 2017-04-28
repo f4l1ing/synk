@@ -70,7 +70,7 @@ def upload_changes():
 def get_changes():
     os.system("git pull origin master --no-edit")
 
-
+why does this take so long
 def main():
     args = get_args()
     if args.setup:
