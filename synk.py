@@ -59,7 +59,7 @@ def detect_changes():
 
     return old_hash != new_hash
 
-dadf
+
 def upload_changes():
     result = os.popen("git stash apply && git stash clear && git commit -am 'autocommit' && git push origin master").read()
     if len(result.split('\n')) > 2:
