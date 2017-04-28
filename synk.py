@@ -69,7 +69,7 @@ def upload_changes():
 
 def get_changes():
     # maybe I should 
-    os.syto stem("git pull origin master --no-edit")
+    os.system("git pull origin master --no-edit")
 
 
 def main():
