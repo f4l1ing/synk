@@ -61,7 +61,7 @@ def detect_changes():
 
 
 def upload_changes():
-    result = os.popen("git stash apply && git stash drop && git commit -am 'autocommit' && git push origin master").read()
+    result = os.popen("git stash apply && git stash clear && git commit -am 'autocommit' && git push origin master").read()
     if len(result.split('\n')) > 2:
         get_changes()
         upload_changes()
