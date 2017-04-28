@@ -78,7 +78,7 @@ def main():
         quit()
     if not os.path.isfile(CONFFILE):
         print("Please run `./synk_cli.py -s` first.")
-        quit() 
+        quit()
     os.system("git add -f . && git stash save")
     upload_changes()
     get_changes()
