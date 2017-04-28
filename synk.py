@@ -69,7 +69,7 @@ def upload_changes():
 
 def get_changes():
     # maybe I should change this to: git fetch origin master
-    # or maybe: git reset --hard master 
+    # or maybe: git reset --hard origin/master 
     os.system("git pull origin master --no-edit")
 
 
