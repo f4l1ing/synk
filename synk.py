@@ -57,7 +57,7 @@ def detect_changes():
         os.system("touch %s" % LOGFILE)
         return True
 
-    return old_hash != new_hashdsfasdfsa
+    return old_hash != new_hash
 
 
 def upload_changes():
