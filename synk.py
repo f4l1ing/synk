@@ -61,7 +61,10 @@ def detect_changes():
 
 
 def upload_changes():
-    os.system("git stash apply && git stash drop && git commit -am 'autocommit' && git push origin master")
+    result = os.popen("git stash apply && git stash drop && git commit -am 'autocommit' && git push origin master").read()
+    if len(result.split('\n')) > 2:
+        get_changes()
+        upload_changes()
 
 
 def get_changes():
@@ -76,12 +79,13 @@ def main():
     if not os.path.isfile(CONFFILE):
         print("Please run `./synk_cli.py -s` first.")
         quit()
+    upload_changes()
+    get_changes()
     while True:
         time.sleep(0.1)
         try:
             if detect_changes():
                 os.system("git add -f . && git stash save")
-                get_changes()
                 upload_changes()
                 continue
             get_changes()
