@@ -7,7 +7,10 @@ This is a testing file for editing.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 does 
 =======
 >>>>>>> Stashed changes
@@ -32,6 +35,9 @@ doesgdfsgsdfgdf
 =======
 doesgdfsgsdfgdf
 >>>>>>> f4e179d91f53ee1ba732904e354201c6aac4aa41
+<<<<<<< Updated upstream
 =======
 doesgdfsgsdfgdf
 >>>>>>> f4e179d91f53ee1ba732904e354201c6aac4aa41
+=======
+>>>>>>> Stashed changes
