@@ -68,6 +68,7 @@ def upload_changes():
 
 
 def get_changes():
+    # maybe 
     os.system("git pull origin master --no-edit")
 
 
