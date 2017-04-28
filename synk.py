@@ -66,7 +66,7 @@ def upload_changes():
         get_changes()
         upload_changes()
 
-ghj
+gh
 def get_changes():
     os.system("git pull origin master --no-edit")
 
